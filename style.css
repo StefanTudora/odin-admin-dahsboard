@@ -1,0 +1,42 @@
+
+.view {
+    font-family: Roboto, serif;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+}
+
+.view * {
+    /* height: 100vh; */
+}
+
+.side-view {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.side-view > .settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.view > .main-content {
+    background: orange;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr;
+}
+
+.main-content > .controls {
+    background-color : gray;
+}
+
+.main-contents > .cards {
+    background-color: green;
+}
+
+
