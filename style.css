@@ -65,13 +65,24 @@ nav ul {
     padding: 0rem min(20px, 2rem) 0rem min(20px, 2rem);
 }
 
+.header > .controls > img {
+    width: 2.5rem;
+}
+
 .header > .controls {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    /* justify-content: center */
+}
+
+.header > #search-bar {
+    justify-content: flex-start;
+}
+
+.header > #notifications {
+    gap: 1rem;
 }
 
 .header input {
@@ -86,11 +97,11 @@ nav ul {
 .header button {
     background-color: rgb(24, 73, 163);
     border-style: none;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     transition-duration: 0.25s;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 1rem 2rem 1rem 2rem;
     margin: 0 1rem 0 1rem;
     box-shadow: 0.25rem 0.25rem 1rem gray;
 }
@@ -99,22 +110,8 @@ button:active {
     scale:90%;
 }
 
-.header > #user-presentation {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 4fr;
-    /* column-gap: 0rem; */
-}
-
 #user-presentation img {
     grid-row: span 2;
-}
-
-#notifications {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    gap: 1rem;
 }
 
 .main-content > .cards-presentation {
@@ -174,7 +171,15 @@ button:active {
 .anouncements > .card > hr {
     /* Intentionally left empty for now */
     width: 100%;
+    background-color: black;
     height: 1px;
+}
+
+.anouncements > .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: auto;
 }
 
 .anouncements > .card p {
