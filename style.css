@@ -138,6 +138,9 @@ button:active {
 
 #cards-id {
     grid-area : 1 / 1 / 3 / 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #an-id {
@@ -153,6 +156,7 @@ button:active {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
+    flex: 1;
 }
 
 .cards > .card p {
@@ -185,20 +189,29 @@ button:active {
     justify-content: flex-end;
 }
 
-.anouncements > .card > hr {
+.anouncements-category, .trending-category {
+    display: flex;
+    flex-direction: column;
+}
+
+#anouncements, #trending {
+    flex: 1;
+}
+
+#anouncements > hr {
     width: 100%;
     background-color: black;
     height: 1px;
 }
 
-.anouncements > .card {
+#anouncements {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: auto;
+    flex: 1;
 }
 
-.anouncements > .card p {
+#anouncements p {
     font-weight: bold;
 }
 
